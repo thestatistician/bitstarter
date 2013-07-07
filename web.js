@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
     var infile = "index.html";
     var buf = new Buffer(256);
     buf = fs.readFileSync(infile);
-  response.send(buf.toString);
+    response.send(buf.toString());
 });
 
 var port = process.env.PORT || 5000;
